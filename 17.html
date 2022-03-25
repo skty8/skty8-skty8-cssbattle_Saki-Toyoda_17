@@ -1,0 +1,63 @@
+<div class="container">
+    <div class="circle_top"></div>
+    <div class="main_left_circle"></div>
+    <div class="main_center"></div>
+    <div class="main_right_circle"> </div>
+    <div class="circle_bottom"></div>
+</div>
+
+<style>
+    body {
+        background: #09042A;
+    }
+
+    .container {
+        position: relative;
+        width: 200px;
+        height: 180px;
+        margin: 60px auto;
+    }
+
+    .circle_top,
+    .circle_bottom {
+        position: absolute;
+        left: 70px;
+        z-index: 1;
+        background: #F5BB9C;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        box-shadow: 0 0 0 10px #09042A;
+    }
+
+    .circle_top {
+        top: 7px;
+    }
+
+    .circle_bottom {
+        bottom: 7px;
+    }
+
+    .main_left_circle,
+    .main_right_circle {
+        position: absolute;
+        top: 50px;
+        border: 10px solid #E78481;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+    }
+
+    .main_right_circle {
+        right: 0;
+    }
+
+    .main_center {
+        position: absolute;
+        top: 65px;
+        left: 70px;
+        background: #E78481;
+        width: 58px;
+        height: 50px;
+    }
+</style>
